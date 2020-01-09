@@ -1,0 +1,9 @@
+@startuml
+
+footer Page 2 of 3
+
+title Angular
+CompanyRoute -> CompanyComponent: check if user has access rights
+CompanyComponent -> CompanyService: query /api/companies
+CompanyService -> CompanyComponent
+@enduml

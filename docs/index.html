@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="css/masonary.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <!--intro-->
+        <section>
+            <section data-background-image="assets/jhipster.gif" data-background-position="bottom"
+                     data-background-size="80%">
+            </section>
+            <section>
+                <h2>Voting</h2>
+                <ol>
+                    Experience in:
+                    <li class="fragment">JS/TS</li>
+                    <li class="fragment">Full Stack, e.g. Angular, Sprint Boot</li>
+                    <!--<li class="fragment">Frontend, e.g. Angular</li>-->
+                    <!--<li class="fragment">Backend, e.g. Sprint Boot</li>-->
+                    <!--<li class="fragment">Full Stack</li>-->
+                </ol>
+                <aside class="notes">
+                    <ul>
+                        <li>took out almost all the slides regarding Backend Spring Boot, because it is for a Frontend MeetUp</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h2>JHipster</h2>
+                <ol>
+                    <li class="fragment">What is JHipster</li>
+                    <li class="fragment">Talking about the experience from a Frontend perspective</li>
+                    <!--<li class="fragment">Talking about the experience from a Full Stack perspective</li>-->
+                </ol>
+            </section>
+            <section>
+                <h2>What is JHipster (1)</h2>
+                <h3>Full Stack Generator of</h3>
+                <ul>
+                    <li class="fragment">Spring Boot Backend</li>
+                    <li class="fragment">SPA Frontend</li>
+                    <li class="fragment">Operations</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Backend: Monolith vs MicroServices</li>
+                        <li>deprecated term: DevOps</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h2>What is JHipster (2)</h2>
+                <ul>
+                    <li class="fragment">Software</li>
+                    <li class="fragment">Framework ?</li>
+                    <li class="fragment">Tool ?</li>
+                    <li class="fragment">Generator ?</li>
+                    <li class="fragment">Platform</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Why using JHipster</h2>
+                <ul>
+                    <li class="fragment">little budget</li>
+                    <li class="fragment">working prototype after first product increment to get first feedback from stakeholder</li>
+                    <li class="fragment">Full stack developer -> rapid prototyping</li>
+                    <li class="fragment">Spring Boot developer -> learn SPA</li>
+                    <li class="fragment">Angular Developer -> React / Vue</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Project Chronicles</h2>
+                <ol>
+                    <li class="fragment">generate a JHipster Backend Monolith</li>
+                    <li class="fragment">generate entity relationships</li>
+                    <li class="fragment">add some business logic</li>
+                    <li class="fragment">make some UI enhancements</li>
+                    <li class="fragment">deploy to the cloud</li>
+                    <li class="fragment">done in 30 working days (240 hours)</li>
+                    <li class="fragment">If JHipster takes over everything, then where is the fun part?</li>
+                </ol>
+                <aside class="notes">
+                    <ul>
+                        <li>Every project is unique in his own ways ::: </li>
+                    </ul>
+                </aside>
+            </section>
+            <!--Project intro-->
+            <section>
+                <h2>Project Start</h2>
+                <ul>
+                    <li class="fragment">software requirements from business analyst</li>
+                    <li class="fragment">UI-design sketches from designer</li>
+                    <li class="fragment">deliver a prototype</li>
+                    <li class="fragment">calculate the effort</li>
+                    <li class="fragment">list user stories</li>
+                    <li class="fragment">JHipster suggested by our architect: reduce implementation time</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>thanks for the help of our architect and infrastructure guys</li>
+                        <li>I couldn't have did the project without their help</li>
+                        <li>team work: instrumental part of ite-thinking</li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
+
+        <!--Jhipster-->
+        <section>
+            <section>
+                <h2>JHipster offers</h2>
+                <br/>
+            </section>
+            <section data-background-image="assets/jhipster.png" data-background-position="center"
+                     data-background-size="25%">
+                <aside class="notes">
+                    <ul>
+                        <li>began with Angular 1.x</li>
+                    </ul>
+                </aside>
+            </section>
+            <section data-background-image="assets/clientOptionsJhipster.png" data-background-position="center"
+                     data-background-size="80%">
+            </section>
+            <!--<section data-background-image="assets/serverOptionsJhipster.png" data-background-position="center"-->
+                     <!--data-background-size="55%">-->
+            <!--</section>-->
+            <section data-background-image="assets/devOpsOptionsJhipster.png" data-background-position="center"
+                     data-background-size="60%">
+                <aside class="notes">
+                    <ul>
+                        <li>provided by default</li>
+                        <li>Docker-Compose</li>
+                    </ul>
+                </aside>
+            </section>
+            <section data-background-image="assets/jhipster.gif" data-background-position="bottom"
+                     data-background-size="80%">
+                <aside class="notes">
+                    <ul>
+                        <li>15 options</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h2>Advantages</h2>
+                <ul class="advantages">
+                    <li class="fragment">simplification</li>
+                    <li class="fragment">productivity</li>
+                    <li class="fragment">consistency</li>
+                </ul>
+            </section>
+        </section>
+
+        <!--Architecture-->
+        <section>
+            <section>
+                <small>
+                    Architecture
+                </small>
+                <br/>
+                <img src="assets/archDiagram.jpg" align="center" height="600px" width="600px">
+            </section>
+            <!--<section data-background-image="assets/jhipster.gif" data-background-position="bottom"-->
+                     <!--data-background-size="80%">-->
+            <!--</section>-->
+            <section>
+                <h3>Configuration</h3>
+                <pre class="stretch">
+                    <code data-trim data-noescape class="JSON" style="font-size: 70%">
+                        {"generator-jhipster": {
+                            "jhipsterVersion": "6.1.2",
+                            "applicationType": "monolith",
+                            "serverPort": "8080",
+                            "authenticationType": "jwt",
+                            "enableHibernateCache": true,
+                            "databaseType": "sql",
+                            "devDatabaseType": "h2Disk",
+                            "prodDatabaseType": "postgresql",
+                            "buildTool": "maven",
+                            "useSass": true,
+                            "clientPackageManager": "npm",
+                            "clientFramework": "angularX",
+                            "testFrameworks": ["cucumber", "gatling", "protractor"], // JUnit, Jest default included
+                            "jhiPrefix": "jhi",
+                            "dtoSuffix": "DTO", // MapStruct
+                            "enableTranslation": true,
+                            "nativeLanguage": "de",
+                            "languages": ["de", "en"]
+                        }}
+                    </code>
+                </pre>
+                <aside class="notes">
+                    <ul>
+                        <li>generator-jhipster</li>
+                        <!--<li>DevOps options docker-compose.yml are all generated</li>-->
+                        <li>There is more config options</li>
+                        <li>but I narrowed them down, just to make sure that I fits them in 1 Slide (without scrolling)</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h2>Prototype</h2>
+                <ul>
+                    <li>JHipster Domain Language (JDL)</li>
+                    <li>Spring Boot</li>
+                    <li>Angular</li>
+                    <li>Testing</li>
+                </ul>
+            </section>
+            <section>
+                <h3>JHipster Domain Language (JDL)</h3>
+                <!--insert required relationship in faker-->
+                <pre class="stretch">
+                    <code data-trim data-noescape class="JSON">
+                        entity Project {
+                            name String required
+                        }
+                        // create entities: Company & Standard in the same way...
+
+                        relationship ManyToMany {
+                            Project{company(name)} to Company{project(name)}
+                        }
+
+                        relationship OneToMany {
+                            Company{standard} to Standard{company(name) required}
+                        }
+
+
+                        dto * with mapstruct
+                    </code>
+                </pre>
+                <aside class="notes">
+                    <ul>
+                        <li>jHipster: you define entity relationship in JDL</li>
+                        <li>call import jdl, and boom, they are generated in Spring Boot and Angular</li>
+                        <!--<li>entity -> dto </li>-->
+                        <!--<li>Frontend Developers: experience that you have to make 5 requests, because Backend api is relentless towards its precious domain object</li>-->
+                    </ul>
+                    <!--<small>-->
+                        <!--<a href="https://www.youtube.com/watch?v=rbSDGr-_UwY">Sandro Mancuso: A Case For Outside-In Design - SCLConf 2018</a>-->
+                    <!--</small>-->
+                </aside>
+            </section>
+        </section>
+        <!--Prototype-->
+        <section>
+            <!--<section>-->
+                <!--<h3>Backend</h3>-->
+                <!--<ul>-->
+                    <!--<li>Spring Boot</li>-->
+                    <!--<ul>-->
+                        <!--<li>Entity</li>-->
+                        <!--<li>Repository</li>-->
+                        <!--<li>Service</li>-->
+                        <!--<li>DTO (MapStruct)</li>-->
+                        <!--<li>Resource</li>-->
+                    <!--</ul>-->
+                    <!--<li>Jwt</li>-->
+                    <!--<li>Swagger</li>-->
+                    <!--<li>Liquibase</li>-->
+                    <!--<li>Hibernate</li>-->
+                <!--</ul>-->
+                <!--<aside class="notes">-->
+                    <!--<small>install for yourself</small>-->
+                    <!--<ul>-->
+                        <!--<li>Lombok, builder pattern</li>-->
+                        <!--<li>Liquibase: csv files vs Flyway</li>-->
+                    <!--</ul>-->
+                <!--</aside>-->
+            <!--</section>-->
+            <section>
+                <h3>Frontend</h3>
+                <ul>
+                    <li>Angular</li>
+                    <ul>
+                        <li>Component</li>
+                        <li>Service</li>
+                        <li>Entity</li>
+                    </ul>
+                    <li>Bootstrap</li>
+                    <li>form validation</li>
+                    <li>i18n</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Bootstrap: generated angular component does not have a .scss-file, all css are centralized e.g. in bootstrap.min.css</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h3>Testing</h3>
+                <ul>
+                    <li>JUnit5</li>
+                    <li>Jest (Jasmin)</li>
+                    <li>Protractor</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>e2e-test for login</li>
+                        <li>password for the default users like test or system are stored in encrypted form in db, but was used as plain text in tests</li>
+                        <li>change the password / delete test user, have to make adjustment in tests</li>
+                        <li>Protractor e2e tests for updating password</li>
+                        <li>except some functionality like jasmine.createSpyObj, jest provides most of the functions of jasmin</li>
+                        <li>.overrideTemplate(CompanyComponent, '') has to be disabled if you want add unit tests for interaction with UI-Elements</li>
+                        <li>angular.json: skipTests false -> true</li>
+                        <li>not all angular cli commands are supported</li>
+                        <li>ng-mock</li>
+                        <li>Import/Export e.g. FormsModule, MaterialModule in TestModule, import in Component tests</li>
+                        <li>liquibase and faker generate fake data declared in csv files</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <img src="assets/screenshot-jhipster-home.png" align="center">
+            </section>
+        </section>
+        <!--<section>-->
+            <!--<section>-->
+                <!--<small>-->
+                    <!--How does a REST-call look like for getAllCompanies?-->
+                <!--</small>-->
+                <!--<br/>-->
+                <!--<img src="assets/getAllCompanies.png" align="center">-->
+            <!--</section>-->
+            <!--<section data-background-image="assets/jhipsterSequenceDiagram.png" data-background-position="center"-->
+                     <!--data-background-size="80%">-->
+            <!--</section>-->
+            <!--<section data-background-image="assets/angularSequenceDiagram.png" data-background-position="center"-->
+                     <!--data-background-size="80%">-->
+                <!--<aside class="notes">-->
+                    <!--<ul>-->
+                        <!--<li>companies are CompanyDtos</li>-->
+                    <!--</ul>-->
+                <!--</aside>-->
+            <!--</section>-->
+            <!--<section data-background-image="assets/springBootSequenceDiagram.png" data-background-position="center"-->
+                     <!--data-background-size="80%">-->
+            <!--</section>-->
+        <!--</section>-->
+        <!--advantage vs disadvange-->
+        <section>
+            <section>
+                <h2>JHipster vs the universe...</h2>
+            </section>
+            <section>
+                <h3>Where JHipster shines</h3>
+                <ul class="advantages">
+                    <li>for rapid prototyping</li>
+                    <li>production-ready</li>
+                    <li>RESTful</li>
+                    <li>latest frameworks</li>
+                    <li>differentiates from other (yeoman) generators: </li>
+                    <ul>
+                        <li>fullStack</li>
+                        <li>foundation for TDD: Unit-, Integration- and UI-Tests</li>
+                        <li>popularity</li>
+                    </ul>
+                </ul>
+            </section>
+            <section>
+                <h3>but ... there were challenges</h3>
+                <ul class="drawbacks">
+                    <li>experience with Spring Boot</li>
+                    <li>and at least 1 SPA-Framework</li>
+                    <li>crud web pages: not responsive on mobile clients</li>
+                    <li>Understanding: </li>
+                    <ul>
+                        <li>jdl</li>
+                        <li>JHipster way of writing code</li>
+                    </ul>
+                </ul>
+            </section>
+            <section>
+                <h3>Unclear</h3>
+                <ul class="unclear">
+                    <li>too much features</li>
+                    <li>utilize JHipster in an ongoing project with its blueprints</li>
+                    <li>demarcation between JHipster specific and e.g. Angular / Spring Boot issues</li>
+                    <!--<ul>-->
+                        <!--<li>Hibernate 2nd level cache: @ManyToOne relationship, changes in child entities are not propagated / fetched in parent entity</li>-->
+                    <!--</ul>-->
+                </ul>
+            </section>
+            <!--<section>-->
+                <!--<video class="stretch" src="assets/progression_of_getting_a_perfect_loop.mp4"></video>-->
+            <!--</section>-->
+            <section data-background-video="assets/progression_of_getting_a_perfect_loop.mp4" data-background-video-muted
+                     data-background-size="contain">
+                <h2>Sometimes it does feel like</h2>
+            </section>
+            <section>
+                <h2>but you can get help from</h2>
+                <small>
+                    <a href="https://github.com/jhipster/generator-jhipster/issues">JHipster GitHub Issue Page (bugs)</a>
+                    <br/>
+                    and
+                    <br/>
+                    <a href="https://stackoverflow.com/">StackOverflow (questions)</a>
+                </small>
+            </section>
+            <section>
+                <h2>Marketplace</h2>
+                <small>
+                    <a href="https://www.jhipster.tech/modules/marketplace/#/list">https://www.jhipster.tech/modules/marketplace/</a>
+                    <br/>
+                    <ul>
+                        <li>Angular Material Integration</li>
+                        <li>generator-jhipster-nav-element</li>
+                    </ul>
+                </small>
+                <aside class="notes">
+                    <ul>
+                        <li>add a nav element in navbar</li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div>
+                    <h1>IT-ECONOMICS</h1>
+                    <small>Telling from a developer perspective</small>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <p class="vertical">
+                        <span class="solid">I</span>
+                        ndividual
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">T</span>
+                        DD
+                    </p>
+                    <p class="fragment vertical">-</p>
+                    <p class="fragment vertical">
+                        <span class="solid">E</span>
+                        mergent
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">C</span>
+                        lean
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">O</span>
+                        n-site
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">N</span>
+                        ormal
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">O</span>
+                        ne-Team
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">M</span>
+                        obile
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">I</span>
+                        TCon
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">C</span>
+                        SD
+                    </p>
+                    <p class="fragment vertical">
+                        <span class="solid">S</span>
+                        crum
+                    </p>
+                </div>
+                <aside class="notes">
+                    <ul>
+                        <li>Emergent: a word describing product backlog items being constantly evolving. --> personal development / Training: 10 days</li>
+                        <li>1 Team approach, 1TD every month</li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
+        <section>
+            <section>
+                <small>
+                    slides on: <a href="https://geyuqiu.github.io/jhipster-in-action/">https://geyuqiu.github.io/jhipster-in-action/</a>
+                </small>
+            </section>
+            <section>
+                <h2>Any Questions?</h2>
+                <video class="stretch" src="assets/confused.mp4"></video>
+                <!--<div class="tenor-gif-embed" data-postid="5291661" data-share-method="host" data-width="100%" data-aspect-ratio="2.009433962264151"><a href="https://tenor.com/view/travolta-gif-5291661">John Travolta Well GIF</a> from <a href="https://tenor.com/search/johntravolta-gifs">Johntravolta GIFs</a></div>-->
+                <!--<div class="tenor-gif-embed" data-postid="4572636" data-share-method="host" data-width="100%" data-aspect-ratio="2.982035928143713"><a href="https://tenor.com/view/friends-joey-tribbiani-matt-le-blanc-confused-look-gif-4572636">Looks Around GIF</a> from <a href="https://tenor.com/search/friends-gifs">Friends GIFs</a></div>-->
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<!--<script type="text/javascript" async src="https://tenor.com/embed.js"></script>-->
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Push each slide change to the browser history.  Implies `hash: true`
+        history: true,
+        slideNumber: true,
+        touch: true,
+        progress: true,
+        controls: true,
+        autoPlayMedia: true,
+        // enable up and down key to move through slides on presenter
+        keyboard: {
+            38: 'prev',
+            40: 'next'
+        },
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
+
