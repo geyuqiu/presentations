@@ -90,10 +90,6 @@
                     </ul>
                 </aside>
             </section>
-        </section>
-        <section>
-            <section data-background-image="assets/jhipster.gif" data-background-size="100%">
-            </section>
             <section>
                 <h2>Voting</h2>
                 <ol>
@@ -109,14 +105,6 @@
                         <li>took out almost all the slides regarding Backend Spring Boot, because it is for a Frontend MeetUp</li>
                     </ul>
                 </aside>
-            </section>
-            <section>
-                <h2>JHipster</h2>
-                <ol>
-                    <li class="fragment">What is JHipster</li>
-                    <li class="fragment">Talking about the experience from a Frontend perspective</li>
-                    <!--<li class="fragment">Talking about the experience from a Full Stack perspective</li>-->
-                </ol>
             </section>
             <section>
                 <h2>What is JHipster (1)</h2>
@@ -143,41 +131,47 @@
                     <li class="fragment">Platform</li>
                 </ul>
             </section>
-            <section>
-                <h2>Why using JHipster</h2>
-                <ul>
-                    <li class="fragment">little budget</li>
-                    <li class="fragment">working prototype after first product increment to get first feedback from stakeholder</li>
-                    <li class="fragment">Full stack developer -> rapid prototyping</li>
-                    <li class="fragment">Spring Boot developer -> learn SPA</li>
-                    <li class="fragment">Angular Developer -> React / Vue</li>
-                </ul>
-            </section>
+        </section>
+
+        <!--Project-->
+        <section>
             <section>
                 <h2>Project Chronicles</h2>
                 <ol>
-                    <li class="fragment">generate a JHipster Backend Monolith</li>
-                    <li class="fragment">generate entity relationships</li>
+                    <li class="fragment">architecture</li>
+                    <li class="fragment">check out JHipster</li>
+                    <li class="fragment">generator-jhipster</li>
+                    <li class="fragment">generate entity relationships (jdl)</li>
                     <li class="fragment">add some business logic</li>
                     <li class="fragment">make some UI enhancements</li>
                     <li class="fragment">deploy to the cloud</li>
                     <li class="fragment">done in 30 working days (240 hours)</li>
-                    <li class="fragment">If JHipster takes over everything, then where is the fun part?</li>
+                    <li class="fragment">if JHipster takes over everything, then where is the fun part?</li>
                 </ol>
                 <aside class="notes">
                     <ul>
-                        <li>Every project is unique in his own ways ::: </li>
+                        <li>generator-jhipster: define some options, jhipster full stack application is generated, e.g. Spring Boot and Angular</li>
                     </ul>
                 </aside>
             </section>
-        </section>
-
-        <!--Jhipster-->
-        <section>
             <section>
-                <h2>JHipster offers</h2>
-                <br/>
+                <h2>Project Chronicles</h2>
+                <ol>
+                    <li>architecture</li>
+                </ol>
             </section>
+            <section data-background-image="assets/archDiagram.png" data-background-position="center"
+                data-background-size="15%">
+            </section>
+
+            <section>
+                <h2>Project Chronicles</h2>
+                <ol>
+                    <li>architecture</li>
+                    <li>check out JHipster</li>
+                </ol>
+            </section>
+
             <section data-background-image="assets/jhipster.png" data-background-position="center"
                      data-background-size="25%">
                 <aside class="notes">
@@ -201,8 +195,19 @@
                     </ul>
                 </aside>
             </section>
-            <section data-background-image="assets/jhipster.gif" data-background-position="bottom"
-                     data-background-size="80%">
+
+            <section>
+                <h2>Project Chronicles</h2>
+                <ol>
+                    <li>architecture</li>
+                    <li>check out JHipster</li>
+                    <li>generator-jhipster</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>generator-jhipster (1)</h2>
+                <img src="assets/jhipster.gif" align="center">
                 <aside class="notes">
                     <ul>
                         <li>15 options</li>
@@ -210,26 +215,7 @@
                 </aside>
             </section>
             <section>
-                <h2>Advantages</h2>
-                <ul class="advantages">
-                    <li class="fragment">simplification</li>
-                    <li class="fragment">productivity</li>
-                    <li class="fragment">consistency</li>
-                </ul>
-            </section>
-        </section>
-
-        <!--Architecture-->
-        <section>
-            <section>
-                <small>
-                    Architecture
-                </small>
-                <br/>
-                <img src="assets/archDiagram.jpg" align="center" height="600px" width="600px">
-            </section>
-            <section>
-                <h3>Configuration</h3>
+                <h2>generator-jhipster (2)</h2>
                 <pre class="stretch">
                     <code data-trim data-noescape class="JSON" style="font-size: 70%">
                         {"generator-jhipster": {
@@ -257,20 +243,20 @@
                 <aside class="notes">
                     <ul>
                         <li>generator-jhipster</li>
-                        <!--<li>DevOps options docker-compose.yml are all generated</li>-->
+                        <!--<li>Operation options docker-compose.yml are all generated</li>-->
                         <li>There is more config options</li>
                         <li>but I narrowed them down, just to make sure that I fits them in 1 Slide (without scrolling)</li>
                     </ul>
                 </aside>
             </section>
             <section>
-                <h2>Prototype</h2>
-                <ul>
-                    <li>JHipster Domain Language (JDL)</li>
-                    <li>Spring Boot</li>
-                    <li>Angular</li>
-                    <li>Testing</li>
-                </ul>
+                <h2>Project Chronicles</h2>
+                <ol>
+                    <li>architecture</li>
+                    <li>check out JHipster</li>
+                    <li>generator-jhipster</li>
+                    <li>generate entity relationships (jdl)</li>
+                </ol>
             </section>
             <section>
                 <h3>JHipster Domain Language (JDL)</h3>
@@ -296,8 +282,8 @@
                 </pre>
                 <aside class="notes">
                     <ul>
-                        <li>jHipster: you define entity relationship in JDL</li>
-                        <li>call import jdl, and boom, they are generated in Spring Boot and Angular</li>
+                        <li>define entity relationships in JDL</li>
+                        <li>call import jdl, and boom, the defined entities are generated in Spring Boot and Angular</li>
                         <!--<li>entity -> dto </li>-->
                         <!--<li>Frontend Developers: experience that you have to make 5 requests, because Backend api is relentless towards its precious domain object</li>-->
                     </ul>
@@ -307,8 +293,16 @@
                 </aside>
             </section>
         </section>
-        <!--Prototype-->
+        <!--App-->
         <section>
+            <section>
+                <h2>Application</h2>
+                <ul>
+                    <li>Backend: Spring Boot</li>
+                    <li>Frontend: Angular</li>
+                    <li>Testing</li>
+                </ul>
+            </section>
             <!--<section>-->
                 <!--<h3>Backend</h3>-->
                 <!--<ul>-->
@@ -384,7 +378,6 @@
                 <!--<small>-->
                     <!--How does a REST-call look like for getAllCompanies?-->
                 <!--</small>-->
-                <!--<br/>-->
                 <!--<img src="assets/getAllCompanies.png" align="center">-->
             <!--</section>-->
             <!--<section data-background-image="assets/jhipsterSequenceDiagram.png" data-background-position="center"-->
@@ -405,11 +398,12 @@
         <!--advantage vs disadvange-->
         <section>
             <section>
-                <h2>JHipster vs the universe...</h2>
+                <h2>Conclusion</h2>
             </section>
             <section>
                 <h3>Where JHipster shines</h3>
                 <ul class="advantages">
+                    <li>simplification, productivity, consistency</li>
                     <li>for rapid prototyping</li>
                     <li>production-ready</li>
                     <li>RESTful</li>
@@ -420,6 +414,21 @@
                         <li>foundation for TDD: Unit-, Integration- and UI-Tests</li>
                         <li>popularity</li>
                     </ul>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>consistency of created components e.g.</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h2>Why using JHipster</h2>
+                <ul>
+                    <li class="fragment">little budget</li>
+                    <li class="fragment">working prototype after first product increment to get first feedback from stakeholder</li>
+                    <li class="fragment">Full stack developer -> rapid prototyping</li>
+                    <li class="fragment">Spring Boot developer -> learn SPA</li>
+                    <li class="fragment">Angular Developer -> React / Vue</li>
                 </ul>
             </section>
             <section>
