@@ -31,6 +31,8 @@
         <section>
             <section>
                 <h1>JHipster</h1>
+                <h6>Yuqiu (Yucho)</h6>
+                <h7>yge@it-economics.de</h7>
             </section>
             <section>
                 <h1>IT-ECONOMICS</h1>
@@ -62,7 +64,7 @@
                     </p>
                     <p class="fragment vertical">
                         <span class="solid">n</span>
-                        erdy
+                        etworking
                     </p>
                     <p class="fragment vertical">
                         <span class="solid">o</span>
@@ -87,8 +89,12 @@
                 </div>
                 <aside class="notes">
                     <ul>
-                        <li>Emergent: a word describing product backlog items being constantly evolving. --> personal development / Training: 10 days</li>
-                        <li>1 Team approach, 1TD every month</li>
+                        <li>We develop individual software solutions on-site at customer with 1 Team approach</li>
+                        <li>We have different value streams, including  web and mobile (ios, android, hybrid) development</li>
+                        <li>Our best practices are tdd and clean code</li>
+                        <li>We believe personal development should be emergent (a word describing product backlog items being constantly evolving)</li>
+                        <li>As a result, we have itCon(ference) and 10 days internal training budget every year (e.g. Scrum related/ ISAQB trainings)</li>
+                        <li>We also have 1TD every month, mainly for networking</li>
                     </ul>
                 </aside>
             </section>
@@ -104,13 +110,14 @@
                 </ul>
                 <aside class="notes">
                     <ul>
+                        <li>Caesar Voting</li>
                         <li>took out almost all the slides regarding Backend Spring Boot, because it is for a Frontend MeetUp</li>
                     </ul>
                 </aside>
             </section>
             <section>
                 <h2>What is JHipster (1)</h2>
-                <h3>Full Stack Generator of</h3>
+                <h3>Full Stack Generator</h3>
                 <ul>
                     <li class="fragment">Spring Boot Backend</li>
                     <li class="fragment">SPA Frontend</li>
@@ -126,11 +133,11 @@
             <section>
                 <h2>What is JHipster (2)</h2>
                 <ul>
-                    <li class="fragment">Software</li>
-                    <li class="fragment">Framework ?</li>
-                    <li class="fragment">Tool ?</li>
-                    <li class="fragment">Generator ?</li>
-                    <li class="fragment">Platform</li>
+                    <li class="fragment">software</li>
+                    <li class="fragment">framework ?</li>
+                    <li class="fragment">tool ?</li>
+                    <li class="fragment">generator ?</li>
+                    <li class="fragment">platform</li>
                 </ul>
             </section>
         </section>
@@ -144,15 +151,15 @@
                     <li class="fragment">check out JHipster</li>
                     <li class="fragment">generator-jhipster</li>
                     <li class="fragment">generate entity relationships (jdl)</li>
-                    <li class="fragment">add some business logic</li>
-                    <li class="fragment">make some UI enhancements</li>
+                    <li class="fragment">add business logic</li>
+                    <li class="fragment">make UI enhancements</li>
                     <li class="fragment">deploy to the cloud</li>
                     <li class="fragment">done in 30 working days (240 hours)</li>
-                    <li class="fragment">if JHipster takes over everything, then where is the fun part?</li>
                 </ol>
                 <aside class="notes">
                     <ul>
                         <li>generator-jhipster: define some options, jhipster full stack application is generated, e.g. Spring Boot and Angular</li>
+                        <li class="fragment">if JHipster takes over everything, then where is the fun part?</li>
                     </ul>
                 </aside>
             </section>
@@ -210,6 +217,10 @@
             <section>
                 <h2>generator-jhipster (1)</h2>
                 <img src="assets/jhipster.gif" align="center">
+                <!--<small>-->
+                    <!--<p>&#45;&#45;skip-client</p>-->
+                    <!--<p>&#45;&#45;skip-server</p>-->
+                <!--</small>-->
                 <aside class="notes">
                     <ul>
                         <li>15 options</li>
@@ -357,17 +368,17 @@
                 </ul>
                 <aside class="notes">
                     <ul>
+                        <li>except some functionality like jasmine.createSpyObj, jest provides most of jasmin functions</li>
                         <li>e2e-test for login</li>
                         <li>password for the default users like test or system are stored in encrypted form in db, but was used as plain text in tests</li>
-                        <li>change the password / delete test user, have to make adjustment in tests</li>
                         <li>Protractor e2e tests for updating password</li>
-                        <li>except some functionality like jasmine.createSpyObj, jest provides most of the functions of jasmin</li>
+                        <li>change the password / delete test user, have to make adjustment in tests</li>
                         <li>.overrideTemplate(CompanyComponent, '') has to be disabled if you want add unit tests for interaction with UI-Elements</li>
                         <li>angular.json: skipTests false -> true</li>
                         <li>not all angular cli commands are supported</li>
                         <li>ng-mock</li>
-                        <li>Import/Export e.g. FormsModule, MaterialModule in TestModule, import in Component tests</li>
-                        <li>liquibase and faker generate fake data declared in csv files</li>
+                        <li>Import/Export e.g. FormsModule, MaterialModule in an overall TestModule, import in Component tests</li>
+                        <!--<li>liquibase and faker generate fake data declared in csv files</li>-->
                     </ul>
                 </aside>
             </section>
@@ -410,7 +421,7 @@
                 <h3>Where JHipster shines</h3>
                 <ul class="advantages">
                     <li>simplification, productivity, consistency</li>
-                    <li>for rapid prototyping</li>
+                    <li>rapid prototyping</li>
                     <li>production-ready</li>
                     <li>RESTful</li>
                     <li>latest frameworks</li>
@@ -455,7 +466,14 @@
                 <ul class="unclear">
                     <li>too much features</li>
                     <li>utilize JHipster in an ongoing project with its blueprints</li>
-                    <li>demarcation between JHipster specific and e.g. Angular / Spring Boot issues</li>
+                    <li>demarcation of issues between JHipster specific and underlying frameworks </li>
+                    <aside class="notes">
+                        <ul>
+                            <li>overwelmed by all the options (generator-jhipster, jdl)</li>
+                            <li>backend / frontend available</li>
+                            <li>dig deeper, do tdd familarity with e.g. Angular / Spring Boot issues--> </li>
+                        </ul>
+                    </aside>
                     <!--<ul>-->
                         <!--<li>Hibernate 2nd level cache: @ManyToOne relationship, changes in child entities are not propagated / fetched in parent entity</li>-->
                     <!--</ul>-->
@@ -504,6 +522,7 @@
             <section>
                 <h2>Any Questions?</h2>
                 <video class="stretch" src="assets/confused.mp4"></video>
+                <p>yge@it-economics.de</p>
                 <!--<div class="tenor-gif-embed" data-postid="5291661" data-share-method="host" data-width="100%" data-aspect-ratio="2.009433962264151"><a href="https://tenor.com/view/travolta-gif-5291661">John Travolta Well GIF</a> from <a href="https://tenor.com/search/johntravolta-gifs">Johntravolta GIFs</a></div>-->
                 <!--<div class="tenor-gif-embed" data-postid="4572636" data-share-method="host" data-width="100%" data-aspect-ratio="2.982035928143713"><a href="https://tenor.com/view/friends-joey-tribbiani-matt-le-blanc-confused-look-gif-4572636">Looks Around GIF</a> from <a href="https://tenor.com/search/friends-gifs">Friends GIFs</a></div>-->
             </section>
