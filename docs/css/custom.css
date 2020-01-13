@@ -17,3 +17,8 @@ ul.small li{
 .more-height {
     height: 10em;
 }
+
+.border-colored {
+    border-style: solid;
+    border-color: coral;
+}
