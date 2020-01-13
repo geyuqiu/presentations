@@ -13,3 +13,7 @@ ul.small li{
     font-size: 80%;
     margin:0 0 20px 0;
 }
+
+.more-height {
+    height: 10em;
+}
