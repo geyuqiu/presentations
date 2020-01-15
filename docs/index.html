@@ -32,6 +32,7 @@
             <section>
                 <h1>JHipster</h1>
                 <h6>Yuqiu (Yucho)</h6>
+                <h7>yge@it-economics.de</h7>
             </section>
             <section>
                 <h1>IT-ECONOMICS</h1>
@@ -89,7 +90,7 @@
                 <h7 class="fragment" data-fragment-index="6">yge@it-economics.de</h7>
                 <aside class="notes">
                     <ul>
-                        <li>We develop individual software solutions on-site at customer and perform in team</li>
+                        <li>We develop individual software solutions on-site at customer, perform as a team</li>
                         <li>We have different value streams, including  web and mobile (ios, android, hybrid) development</li>
                         <li>Our best practices are tdd and clean code</li>
                         <li>We believe personal development should be emergent</li>
@@ -101,8 +102,8 @@
             <section>
                 <h2>Voting</h2>
                 <ul>
-                    Experience in:
-                    <li>JS/TS</li>
+                    <!--Experience in:-->
+                    <li>Frontend, e.g. JS/TS</li>
                     <li>Full Stack, e.g. Angular, Sprint Boot</li>
                     <!--<li>Frontend, e.g. Angular</li>-->
                     <!--<li>Backend, e.g. Sprint Boot</li>-->
@@ -110,8 +111,9 @@
                 </ul>
                 <aside class="notes">
                     <ul>
-                        <li>Caesar Voting</li>
-                        <li>took out almost all the slides regarding Backend Spring Boot, because it is for a Frontend MeetUp</li>
+                        <li>2 votes</li>
+                        <li>Frontend developers give your thumbs up</li>
+                        <li>took out slides for Backend Spring Boot, because it is for a Frontend MeetUp</li>
                     </ul>
                 </aside>
             </section>
@@ -130,16 +132,16 @@
                     </ul>
                 </aside>
             </section>
-            <section>
-                <h2>What is JHipster (2)</h2>
-                <ul>
-                    <li>software</li>
-                    <li>framework ?</li>
-                    <li>tool ?</li>
-                    <li>generator ?</li>
-                    <li>platform</li>
-                </ul>
-            </section>
+            <!--<section>-->
+                <!--<h2>What is JHipster (2)</h2>-->
+                <!--<ul>-->
+                    <!--<li>software</li>-->
+                    <!--<li>framework ?</li>-->
+                    <!--<li>tool ?</li>-->
+                    <!--<li>generator ?</li>-->
+                    <!--<li>platform</li>-->
+                <!--</ul>-->
+            <!--</section>-->
         </section>
 
         <!--Project-->
@@ -190,6 +192,12 @@
             </section>
             <section data-background-image="assets/clientOptionsJhipster.png" data-background-position="center"
                      data-background-size="80%">
+                <aside class="notes">
+                    <ul>
+                        <li>webpack: configuration</li>
+                        <li>Jest, Protractor: many tests cases are generated</li>
+                    </ul>
+                </aside>
             </section>
             <!--<section data-background-image="assets/serverOptionsJhipster.png" data-background-position="center"-->
                      <!--data-background-size="55%">-->
@@ -222,7 +230,7 @@
                 <!--</small>-->
                 <aside class="notes">
                     <ul>
-                        <li>15 options</li>
+                        <li>CMD line tool: 15 options</li>
                     </ul>
                 </aside>
             </section>
@@ -319,6 +327,7 @@
                 <aside class="notes">
                     <ul>
                         <li>find a dockerfile for Spring Boot</li>
+                        <li>docker-compose, bitbucket, hetzner</li>
                         <li>Frontend code deployed inside Spring Boot Docker container</li>
                     </ul>
                 </aside>
@@ -378,7 +387,7 @@
                 </aside>
             </section>
             <section>
-                <h3>Testing</h3>
+                <h3>Testing (1)</h3>
                 <ul>
                     <li>JUnit5</li>
                     <li>Jest (Jasmin)</li>
@@ -386,7 +395,18 @@
                 </ul>
                 <aside class="notes">
                     <ul>
-                        <li>except some functionality like jasmine.createSpyObj, jest provides most of jasmin functions</li>
+                        <li>except some functionality like jasmine.createSpyObj, jest (superset) provides most of jasmin functions</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h3>Testing (2)</h3>
+                <ul>
+                    <li>password</li>
+                    <li>ng-mock</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
                         <li>e2e-test for login</li>
                         <li>password for the default users like test or system are stored in encrypted form in db, but was used as plain text in tests</li>
                         <li>Protractor e2e tests for updating password</li>
@@ -400,6 +420,7 @@
                     </ul>
                 </aside>
             </section>
+
             <section>
                 <img src="assets/screenshot-jhipster-home.png" align="center">
             </section>
@@ -457,25 +478,25 @@
                     <ul>
                         <li>fullStack</li>
                         <li>foundation for TDD: Unit-, Integration- and UI-Tests</li>
-                        <li>popularity</li>
+                        <!--<li>popularity</li>-->
                     </ul>
                 </ul>
             </section>
-            <section>
-                <h2>Why JHipster</h2>
-                <ul>
-                    <li>little budget</li>
-                    <li>feedback from stakeholder</li>
-                    <li>Full stack developer -> rapid prototyping</li>
-                    <li>Spring Boot developer -> learn SPA</li>
-                    <li>Angular Developer -> React / Vue</li>
-                </ul>
-                <aside class="notes">
-                    <ul>
-                        <li>working prototype after first product increment to get first feedback</li>
-                    </ul>
-                </aside>
-            </section>
+            <!--<section>-->
+                <!--<h2>Why JHipster</h2>-->
+                <!--<ul>-->
+                    <!--<li>little budget</li>-->
+                    <!--<li>feedback from stakeholder</li>-->
+                    <!--<li>Full stack developer -> rapid prototyping</li>-->
+                    <!--<li>Spring Boot developer -> learn SPA</li>-->
+                    <!--<li>Angular Developer -> React / Vue</li>-->
+                <!--</ul>-->
+                <!--<aside class="notes">-->
+                    <!--<ul>-->
+                        <!--<li>working prototype after first product increment to get first feedback</li>-->
+                    <!--</ul>-->
+                <!--</aside>-->
+            <!--</section>-->
             <section>
                 <h3>challenges</h3>
                 <ul class="drawbacks">
