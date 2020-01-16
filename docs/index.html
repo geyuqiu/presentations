@@ -35,7 +35,7 @@
                 <h7>yge@it-economics.de</h7>
             </section>
             <section>
-                <h1>IT-ECONOMICS</h1>
+                <h2>IT-ECONOMICS</h2>
                 <small>Telling from a developer perspective</small>
             </section>
             <section>
@@ -105,43 +105,64 @@
                     <!--Experience in:-->
                     <li>Frontend, e.g. JS/TS</li>
                     <li>Full Stack, e.g. Angular, Sprint Boot</li>
-                    <!--<li>Frontend, e.g. Angular</li>-->
-                    <!--<li>Backend, e.g. Sprint Boot</li>-->
-                    <!--<li>Full Stack</li>-->
+                    <li>previous experience in JHipster</li>
                 </ul>
                 <aside class="notes">
                     <ul>
-                        <li>2 votes</li>
                         <li>Frontend developers give your thumbs up</li>
                         <li>took out slides for Backend Spring Boot, because it is for a Frontend MeetUp</li>
                     </ul>
                 </aside>
             </section>
+        </section>
+        <section>
             <section>
-                <h2>What is JHipster (1)</h2>
+                <h3>own coding vs Code Generator</h3>
+            </section>
+            <section>
+                <h3>coding on my own is fun</h3>
+                <ul class="advantages">
+                    <li>my own code</li>
+                    <li>tdd</li>
+                </ul>
+            </section>
+            <section>
+                <h3>... drawbacks for own coding </h3>
+                <ul class="drawbacks">
+                    <li>time consuming</li>
+                    <li>bugs</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Where Code Generators are great</h3>
+                <ul class="advantages">
+                    <li>simplification</li>
+                    <li>productivity</li>
+                    <li>consistency</li>
+                </ul>
+            </section>
+            <section>
+                <h3>... where not so much</h3>
+                <ul class="drawbacks">
+                    <li>test coverage</li>
+                    <li>domain specific language</li>
+                </ul>
+            </section>
+            <section>
+                <blockquote>
+                    what if ... There is a code generator that also generates lots of tests!
+                </blockquote>
+            </section>
+            <section>
+                <h3>JHipster</h3>
                 <h3>Full Stack Generator</h3>
                 <ul>
                     <li>Spring Boot Backend</li>
                     <li>SPA Frontend</li>
                     <li>Operations</li>
+                    <li>Unit-, I-, UI-Tests</li>
                 </ul>
-                <aside class="notes">
-                    <ul>
-                        <li>Backend: Monolith vs MicroServices</li>
-                        <li>deprecated term: DevOps</li>
-                    </ul>
-                </aside>
             </section>
-            <!--<section>-->
-                <!--<h2>What is JHipster (2)</h2>-->
-                <!--<ul>-->
-                    <!--<li>software</li>-->
-                    <!--<li>framework ?</li>-->
-                    <!--<li>tool ?</li>-->
-                    <!--<li>generator ?</li>-->
-                    <!--<li>platform</li>-->
-                <!--</ul>-->
-            <!--</section>-->
         </section>
 
         <!--Project-->
@@ -149,7 +170,7 @@
             <section>
                 <h2>Project Chronicles</h2>
                 <ol>
-                    <li class="fragment">architecture</li>
+                    <li class="fragment">effort estimation & architecture</li>
                     <li class="fragment">check out JHipster</li>
                     <li class="fragment">generator-jhipster</li>
                     <li class="fragment">generate entity relationships (jdl)</li>
@@ -158,16 +179,11 @@
                     <li class="fragment">deploy to the cloud</li>
                     <li class="fragment">done in 30 working days (240 hours)</li>
                 </ol>
-                <aside class="notes">
-                    <ul>
-                        <li>if JHipster takes over everything, then where is the fun part?</li>
-                    </ul>
-                </aside>
             </section>
             <section>
                 <h2>Project Chronicles</h2>
                 <ol>
-                    <li class="border-colored">architecture</li>
+                    <li class="border-colored">effort estimation & architecture</li>
                 </ol>
             </section>
             <section data-background-image="assets/archDiagram.png" data-background-position="center"
@@ -177,15 +193,22 @@
             <section>
                 <h2>Project Chronicles</h2>
                 <ol>
-                    <li>architecture</li>
+                    <li>effort estimation & architecture</li>
                     <li class="border-colored">check out JHipster</li>
                 </ol>
+                <aside class="notes">
+                    <ul>
+                        <li>effort estimation of business requirements</li>
+                        <li>how JHipster can help us to reduce implementation time</li>
+                    </ul>
+                </aside>
             </section>
 
             <section data-background-image="assets/jhipster.png" data-background-position="center"
                      data-background-size="25%">
                 <aside class="notes">
                     <ul>
+                        <li>Angular, Spring Boot Logo</li>
                         <li>began with Angular 1.x</li>
                     </ul>
                 </aside>
@@ -215,7 +238,7 @@
             <section>
                 <h2>Project Chronicles</h2>
                 <ol>
-                    <li>architecture</li>
+                    <li>effort estimation & architecture</li>
                     <li>check out JHipster</li>
                     <li class="border-colored">generator-jhipster</li>
                 </ol>
@@ -231,6 +254,7 @@
                 <aside class="notes">
                     <ul>
                         <li>CMD line tool: 15 options</li>
+                        <li>Backend: Monolith vs MicroServices</li>
                     </ul>
                 </aside>
             </section>
@@ -272,15 +296,14 @@
             <section>
                 <h2>Project Chronicles</h2>
                 <ol>
-                    <li>architecture</li>
+                    <li>effort estimation & architecture</li>
                     <li>check out JHipster</li>
                     <li>generator-jhipster</li>
                     <li class="border-colored">generate entity relationships (jdl)</li>
                 </ol>
             </section>
             <section>
-                <h3>JHipster Domain Language (JDL)</h3>
-                <!--insert required relationship in faker-->
+                <h3>JHipster Domain Language (1)</h3>
                 <pre class="stretch">
                     <code data-trim data-noescape class="JSON">
                         entity Project {
@@ -300,22 +323,22 @@
                         dto * with mapstruct
                     </code>
                 </pre>
+            </section>
+            <section>
+                <h3>JHipster Domain Language (2)</h3>
+                <img src="assets/jdlStudio.png" align="center" height="450px">
+                <br/>
+                https://start.jhipster.tech/jdl-studio/
                 <aside class="notes">
                     <ul>
-                        <li>define entity relationships in JDL</li>
-                        <li>call import jdl, and boom, the defined entities are generated in Spring Boot and Angular</li>
-                        <!--<li>entity -> dto </li>-->
-                        <!--<li>Frontend Developers: experience that you have to make 5 requests, because Backend api is relentless towards its precious domain object</li>-->
+                        <li>side by side UI</li>
                     </ul>
-                    <!--<small>-->
-                        <!--<a href="https://www.youtube.com/watch?v=rbSDGr-_UwY">Sandro Mancuso: A Case For Outside-In Design - SCLConf 2018</a>-->
-                    <!--</small>-->
                 </aside>
             </section>
             <section>
                 <h2>Project Chronicles</h2>
                 <ol>
-                    <li>architecture</li>
+                    <li>effort estimation & architecture</li>
                     <li>check out JHipster</li>
                     <li>generator-jhipster</li>
                     <li>generate entity relationships (jdl)</li>
@@ -323,6 +346,7 @@
                     <li>make UI enhancements</li>
                     <li class="border-colored">deploy to the cloud</li>
                     <li>done in 30 working days (240 hours)</li>
+                    <li>if JHipster takes over everything, then where is the fun part?</li>
                 </ol>
                 <aside class="notes">
                     <ul>
@@ -477,7 +501,7 @@
                     <li>differentiates from other (yeoman) generators: </li>
                     <ul>
                         <li>fullStack</li>
-                        <li>foundation for TDD: Unit-, Integration- and UI-Tests</li>
+                        <li>foundation for TDD: Unit-, I- and UI-Tests</li>
                         <!--<li>popularity</li>-->
                     </ul>
                 </ul>
@@ -511,14 +535,13 @@
                 </ul>
             </section>
             <section>
-                <h3>Unclear</h3>
+                <h3>Find out on your own</h3>
                 <ul class="unclear">
                     <li>too much features</li>
                     <li>utilize JHipster in an ongoing project with its blueprints</li>
                     <li>demarcation of issues between JHipster specific and underlying frameworks </li>
                     <aside class="notes">
                         <ul>
-                            <li>left for you guys to find out</li>
                             <li>overwhelmed by all the options (generator-jhipster, jdl)</li>
                             <li>backend / frontend already available</li>
                             <li>dig deeper, do tdd familiarity with e.g. Angular / Spring Boot issues--> </li>
