@@ -132,7 +132,7 @@
                 <ul class="drawbacks">
                     <li>time is money</li>
                     <li>bugs</li>
-                    <li>crud functions</li>
+                    <li>crud operations</li>
                 </ul>
             </section>
             <section>
@@ -152,7 +152,7 @@
             </section>
             <section>
                 <blockquote>
-                    what if ... There is a code generator that generates CRUD functions and lots of TESTS!
+                    what if ... There is a code generator that generates CRUD operations and TESTS!
                 </blockquote>
             </section>
             <section>
@@ -314,30 +314,30 @@
                     <li>generate entity relationships (jdl)</li>
                 </ol>
             </section>
+            <!--<section>-->
+                <!--<h3>JHipster Domain Language (1)</h3>-->
+                <!--<pre class="stretch">-->
+                    <!--<code data-trim data-noescape class="JSON">-->
+                        <!--entity Project {-->
+                            <!--name String required-->
+                        <!--}-->
+                        <!--// create entities: Company & Standard in the same way...-->
+
+                        <!--relationship ManyToMany {-->
+                            <!--Project{company(name)} to Company{project(name)}-->
+                        <!--}-->
+
+                        <!--relationship OneToMany {-->
+                            <!--Company{standard} to Standard{company(name) required}-->
+                        <!--}-->
+
+
+                        <!--dto * with mapstruct-->
+                    <!--</code>-->
+                <!--</pre>-->
+            <!--</section>-->
             <section>
-                <h3>JHipster Domain Language (1)</h3>
-                <pre class="stretch">
-                    <code data-trim data-noescape class="JSON">
-                        entity Project {
-                            name String required
-                        }
-                        // create entities: Company & Standard in the same way...
-
-                        relationship ManyToMany {
-                            Project{company(name)} to Company{project(name)}
-                        }
-
-                        relationship OneToMany {
-                            Company{standard} to Standard{company(name) required}
-                        }
-
-
-                        dto * with mapstruct
-                    </code>
-                </pre>
-            </section>
-            <section>
-                <h3>JHipster Domain Language (2)</h3>
+                <h3>JHipster Domain Language (jdl)</h3>
                 <img src="assets/jdlStudio.png" align="center" height="450px">
                 <aside class="notes">
                     <ul>
@@ -347,7 +347,7 @@
                 </aside>
             </section>
             <section>
-                <h3>Generation results (1)</h3>
+                <h3>Generated results (1)</h3>
                 <ul>
                     <li>Angular</li>
                     <ul>
@@ -366,7 +366,7 @@
                 </aside>
             </section>
             <section>
-                <h3>Generation results (2)</h3>
+                <h3>Generated results (2)</h3>
                 <img src="assets/screenshot-jhipster-home.png" align="center">
             </section>
             <section>
@@ -398,7 +398,7 @@
                     <li>deploy to the cloud</li>
                     <li>add business logic</li>
                     <li>make UI enhancements</li>
-                    <li>done in 30 working days (240 hours)</li>
+                    <!--<li>done in 30 working days (240 hours)</li>-->
                 </ol>
                 <aside class="notes">
                     <ul>
