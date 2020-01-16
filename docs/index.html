@@ -35,10 +35,11 @@
                 <h7>yge@it-economics.de</h7>
             </section>
             <section>
-                <h2>Thumbs up</h2>
+                <h2>Polls</h2>
+                <h6>Thumbs up</h6>
                 <ul>
                     <!--Experience in:-->
-                    <li class="fragment">Frontend, e.g. JS/TS</li>
+                    <li>Frontend, e.g. JS/TS</li>
                     <li class="fragment">Full Stack, e.g. Angular, Sprint Boot</li>
                     <li class="fragment">previous experience with JHipster</li>
                 </ul>
@@ -227,6 +228,7 @@
                     <ul>
                         <li>webpack: configuration</li>
                         <li>Jest, Protractor: many tests cases are generated</li>
+                        <li>except some functionality like jasmine.createSpyObj, jest (superset) provides most of jasmin functions</li>
                     </ul>
                 </aside>
             </section>
@@ -337,13 +339,35 @@
             <section>
                 <h3>JHipster Domain Language (2)</h3>
                 <img src="assets/jdlStudio.png" align="center" height="450px">
-                <br/>
-                https://start.jhipster.tech/jdl-studio/
                 <aside class="notes">
                     <ul>
+                        <li>design the entities</li>
                         <li>side by side UI</li>
                     </ul>
                 </aside>
+            </section>
+            <section>
+                <h3>Generation results (1)</h3>
+                <ul>
+                    <li>Angular</li>
+                    <ul>
+                        <li>Component</li>
+                        <li>Service</li>
+                        <li>Entity</li>
+                    </ul>
+                    <li>Bootstrap</li>
+                    <li>form validation</li>
+                    <li>i18n</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Bootstrap: generated angular component does not have a .scss-file, all css are centralized e.g. in bootstrap.min.css</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <h3>Generation results (2)</h3>
+                <img src="assets/screenshot-jhipster-home.png" align="center">
             </section>
             <section>
                 <h2>Project Chronicles</h2>
@@ -384,15 +408,7 @@
             </section>
         </section>
         <!--App-->
-        <section>
-            <section>
-                <h2>Application</h2>
-                <ul>
-                    <li>Backend: Spring Boot</li>
-                    <li>Frontend: Angular</li>
-                    <li>Testing</li>
-                </ul>
-            </section>
+        <!--<section>-->
             <!--<section>-->
                 <!--<h3>Backend</h3>-->
                 <!--<ul>-->
@@ -417,64 +433,7 @@
                     <!--</ul>-->
                 <!--</aside>-->
             <!--</section>-->
-            <section>
-                <h3>Frontend</h3>
-                <ul>
-                    <li>Angular</li>
-                    <ul>
-                        <li>Component</li>
-                        <li>Service</li>
-                        <li>Entity</li>
-                    </ul>
-                    <li>Bootstrap</li>
-                    <li>form validation</li>
-                    <li>i18n</li>
-                </ul>
-                <aside class="notes">
-                    <ul>
-                        <li>Bootstrap: generated angular component does not have a .scss-file, all css are centralized e.g. in bootstrap.min.css</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h3>Testing (1)</h3>
-                <ul>
-                    <li>JUnit5</li>
-                    <li>Jest (Jasmin)</li>
-                    <li>Protractor</li>
-                </ul>
-                <aside class="notes">
-                    <ul>
-                        <li>except some functionality like jasmine.createSpyObj, jest (superset) provides most of jasmin functions</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h3>Testing (2)</h3>
-                <ul>
-                    <li>password</li>
-                    <li>ng-mock</li>
-                </ul>
-                <aside class="notes">
-                    <ul>
-                        <li>e2e-test for login</li>
-                        <li>password for the default users like test or system are stored in encrypted form in db, but was used as plain text in tests</li>
-                        <li>Protractor e2e tests for updating password</li>
-                        <li>change the password / delete test user, have to make adjustment in tests</li>
-                        <li>.overrideTemplate(CompanyComponent, '') has to be disabled if you want add unit tests for interaction with UI-Elements</li>
-                        <li>angular.json: skipTests false -> true</li>
-                        <li>not all angular cli commands are supported</li>
-                        <li>ng-mock</li>
-                        <li>Import/Export e.g. FormsModule, MaterialModule in an overall TestModule, import in Component tests</li>
-                        <!--<li>liquibase and faker generate fake data declared in csv files</li>-->
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <img src="assets/screenshot-jhipster-home.png" align="center">
-            </section>
-        </section>
+        <!--</section>-->
         <!--<section>-->
             <!--<section>-->
                 <!--<small>-->
@@ -528,9 +487,26 @@
                     <ul>
                         <li>fullStack</li>
                         <li>foundation for TDD: Unit-, I- and UI-Tests</li>
-                        <!--<li>popularity</li>-->
+                        <ul class="drawbacks">
+                            <li>password</li>
+                            <li>ng-mock</li>
+                        </ul>
                     </ul>
                 </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>e2e-test for login</li>
+                        <li>password for the default users like test or system are stored in encrypted form in db, but was used as plain text in tests</li>
+                        <li>Protractor e2e tests for updating password</li>
+                        <li>change the password / delete test user, have to make adjustment in tests</li>
+                        <li>.overrideTemplate(CompanyComponent, '') has to be disabled if you want add unit tests for interaction with UI-Elements</li>
+                        <li>angular.json: skipTests false -> true</li>
+                        <li>not all angular cli commands are supported</li>
+                        <li>ng-mock</li>
+                        <li>Import/Export e.g. FormsModule, MaterialModule in an overall TestModule, import in Component tests</li>
+                        <!--<li>liquibase and faker generate fake data declared in csv files</li>-->
+                    </ul>
+                </aside>
             </section>
             <!--<section>-->
                 <!--<h2>Why JHipster</h2>-->
@@ -579,6 +555,8 @@
                     <!--</ul>-->
                 </ul>
             </section>
+        </section>
+        <section>
             <section data-background-video="assets/progression_of_getting_a_perfect_loop.mp4" data-background-video-muted
                      data-background-size="contain">
                 <h2>Sometimes it does feel like</h2>
@@ -612,8 +590,6 @@
                     </ul>
                 </aside>
             </section>
-        </section>
-        <section>
             <section>
                 <h2>Any Questions?</h2>
                 <small>
