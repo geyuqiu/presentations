@@ -118,10 +118,10 @@
         </section>
         <section>
             <section>
-                <h3>own coding vs Code Generators</h3>
+                <h3>hand coding vs Code Generators</h3>
             </section>
             <section>
-                <h3>coding on my own is fun</h3>
+                <h3>hand coding is fun</h3>
                 <ul class="advantages">
                     <li>my own code</li>
                     <li>tdd</li>
@@ -191,12 +191,18 @@
                 </ol>
                 <aside class="notes">
                     <ul>
+                        <li>And we actually used it in one of our project, really ?!</li>
                         <li>effort estimation of business requirements</li>
                     </ul>
                 </aside>
             </section>
             <section data-background-image="assets/archDiagram.png" data-background-position="center"
                 data-background-size="15%">
+                <aside class="notes">
+                    <ul>
+                        <li>clear? where JHipster can save us time and money</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -206,11 +212,6 @@
                     <li>architecture</li>
                     <li>check out JHipster</li>
                 </ol>
-                <aside class="notes">
-                    <ul>
-                        <li>where JHipster can save us time and money</li>
-                    </ul>
-                </aside>
             </section>
 
             <section data-background-image="assets/jhipster.png" data-background-position="center"
@@ -256,7 +257,7 @@
             </section>
 
             <section>
-                <h2>generator-jhipster (1)</h2>
+                <h2>generator-jhipster</h2>
                 <img src="assets/jhipster.gif" align="center" class="more-height">
                 <!--<small>-->
                     <!--<p>&#45;&#45;skip-client</p>-->
@@ -270,7 +271,6 @@
                 </aside>
             </section>
             <section>
-                <h2>generator-jhipster (2)</h2>
                 <pre class="stretch">
                     <code data-trim data-noescape class="JSON" style="font-size: 70%">
                         {"generator-jhipster": {
@@ -303,6 +303,9 @@
                         <li>but I narrowed them down, just to make sure that I fits them in 1 Slide (without scrolling)</li>
                     </ul>
                 </aside>
+            </section>
+            <section>
+                <img src="assets/screenshot-jhipster-home-first-step.png" align="center">
             </section>
             <section>
                 <h2>Project Chronicles</h2>
@@ -347,7 +350,9 @@
                 </aside>
             </section>
             <section>
-                <h3>Generated results (1)</h3>
+                <img src="assets/screenshot-jhipster-home.png" align="center">
+            </section>
+            <section>
                 <ul>
                     <li>Angular</li>
                     <ul>
@@ -364,10 +369,6 @@
                         <li>Bootstrap: generated angular component does not have a .scss-file, all css are centralized e.g. in bootstrap.min.css</li>
                     </ul>
                 </aside>
-            </section>
-            <section>
-                <h3>Generated results (2)</h3>
-                <img src="assets/screenshot-jhipster-home.png" align="center">
             </section>
             <section>
                 <h2>Project Chronicles</h2>
@@ -460,13 +461,9 @@
         <section>
             <section>
                 <h2>Conclusion</h2>
-                <ul>
-                    <li>advantages</li>
-                    <li>challenges</li>
-                </ul>
             </section>
             <section>
-                <h3>Where JHipster shines (1)</h3>
+                <h3>Where JHipster shines</h3>
                 <ul class="advantages">
                     <li>simplification, productivity, consistency</li>
                     <li>rapid prototyping</li>
@@ -481,22 +478,21 @@
                 </aside>
             </section>
             <section>
-                <h3>Where JHipster shines (2)</h3>
                 <ul class="advantages">
-                    <li>differentiates from other (yeoman) generators: </li>
+                    <li>differentiates from other generators: </li>
                     <ul>
                         <li>fullStack</li>
                         <li>foundation for TDD: Unit-, I- and UI-Tests</li>
-                        <ul class="drawbacks">
-                            <li>password</li>
-                            <li>ng-mock</li>
-                        </ul>
+                        <!--<ul class="drawbacks">-->
+                            <!--<li>password</li>-->
+                            <!--<li>ng-mock</li>-->
+                        <!--</ul>-->
                     </ul>
                 </ul>
                 <aside class="notes">
                     <ul>
                         <li>e2e-test for login</li>
-                        <li>password for the default users like test or system are stored in encrypted form in db, but was used as plain text in tests</li>
+                        <li>password for the default users like test/test are generated/stored in encrypted form in db, but was used as plain text in tests</li>
                         <li>Protractor e2e tests for updating password</li>
                         <li>change the password / delete test user, have to make adjustment in tests</li>
                         <li>.overrideTemplate(CompanyComponent, '') has to be disabled if you want add unit tests for interaction with UI-Elements</li>
@@ -539,8 +535,8 @@
             <section>
                 <h3>Find out on your own</h3>
                 <ul class="unclear">
-                    <li>too much features</li>
-                    <li>utilize JHipster in an ongoing project with its blueprints</li>
+                    <!--<li>too much features</li>-->
+                    <!--<li>utilize JHipster in an ongoing project with its blueprints</li>-->
                     <li>demarcation of issues between JHipster specific and underlying frameworks </li>
                     <li>if JHipster takes over everything, then where is the fun part?</li>
                     <aside class="notes">
@@ -560,6 +556,12 @@
             <section data-background-video="assets/progression_of_getting_a_perfect_loop.mp4" data-background-video-muted
                      data-background-size="contain">
                 <h2>Sometimes it does feel like</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>find the right options</li>
+                        <li>find the right jdl syntax, options that suit your needs, the needs of the project</li>
+                    </ul>
+                </aside>
             </section>
             <!--<section>-->
                 <!--<video class="stretch" src="assets/progression_of_getting_a_perfect_loop.mp4"></video>-->
@@ -592,13 +594,51 @@
             </section>
             <section>
                 <h2>Any Questions?</h2>
-                <small>
-                    slides on: <a href="https://geyuqiu.github.io/jhipster-in-action/">https://geyuqiu.github.io/jhipster-in-action/</a>
-                </small>
                 <video class="stretch" src="assets/confused.mp4"></video>
-                <p>yge@it-economics.de</p>
                 <!--<div class="tenor-gif-embed" data-postid="5291661" data-share-method="host" data-width="100%" data-aspect-ratio="2.009433962264151"><a href="https://tenor.com/view/travolta-gif-5291661">John Travolta Well GIF</a> from <a href="https://tenor.com/search/johntravolta-gifs">Johntravolta GIFs</a></div>-->
                 <!--<div class="tenor-gif-embed" data-postid="4572636" data-share-method="host" data-width="100%" data-aspect-ratio="2.982035928143713"><a href="https://tenor.com/view/friends-joey-tribbiani-matt-le-blanc-confused-look-gif-4572636">Looks Around GIF</a> from <a href="https://tenor.com/search/friends-gifs">Friends GIFs</a></div>-->
+            </section>
+            <section>
+                <small>
+                    slides on: <a href="https://geyuqiu.github.io/jhipster-in-action/">https://geyuqiu.github.io/jhipster-in-action/</a>
+                    <ul class="advantages">
+                        <li>simplification, productivity, consistency</li>
+                        <li>rapid prototyping</li>
+                        <li>production-ready</li>
+                        <li>RESTful</li>
+                        <li>latest frameworks: AngularJs -> Angular</li>
+                        <li>foundation for TDD: Unit-, I- and UI-Tests</li>
+                        <ul class="drawbacks">
+                            <li>password</li>
+                            <li>ng-mock</li>
+                        </ul>
+                    </ul>
+                    <ul class="drawbacks">
+                        <li>experience with Spring Boot</li>
+                        <li>and at least 1 SPA-Framework</li>
+                        <li>crud web pages: not responsive on mobile clients</li>
+                        <li>understanding: </li>
+                        <ul>
+                            <li>jdl</li>
+                            <li>JHipster way of writing code</li>
+                        </ul>
+                    </ul>
+                    <ul class="unclear">
+                        <!--<li>too much features</li>-->
+                        <!--<li>utilize JHipster in an ongoing project with its blueprints</li>-->
+                        <li>demarcation of issues between JHipster specific and underlying frameworks </li>
+                        <li>if JHipster takes over everything, then where is the fun part?</li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <td>yge@it-economics.de</td>
+                            <td>
+                                <img src="assets/it-e_Logo_Sopra_Steria_RGB_weiss.png" align="right" height="50em" width="220em">
+                            </td>
+                        </tr>
+
+                    </table>
+                </small>
             </section>
         </section>
     </div>
@@ -615,9 +655,9 @@
     Reveal.initialize({
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide
-        hash: true,
+        // hash: true,
         // Push each slide change to the browser history.  Implies `hash: true`
-        history: true,
+        // history: true,
         slideNumber: true,
         touch: true,
         progress: true,
