@@ -22,3 +22,7 @@ ul.small li{
     border-style: solid;
     border-color: coral;
 }
+
+.more-contrast-to-background-image {
+    color: chartreuse !important;
+}
