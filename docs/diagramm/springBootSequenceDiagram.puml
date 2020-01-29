@@ -3,15 +3,15 @@
 footer Page 3 of 3
 
 title Spring Boot
-CompanyResource -> CompanyService: findAll (List<CompanyDTO>)
-CompanyService -> CompanyRepository: findAll (List<CompanyDTO>)
-CompanyRepository -> JpaRepository: findAll (List<Company>)
+[-> CompanyResource: GET /api/companies
+CompanyResource -> CompanyService: List<CompanyDTO> findAll()
+CompanyService -> CompanyRepository: List<CompanyDTO> findAll()
 database "postgres"
-JpaRepository -> postgres: hibernate query
-postgres -> JpaRepository
-JpaRepository -> CompanyRepository
+CompanyRepository -> postgres: List<Company> findAll()
+CompanyRepository -> postgres: JPA query
+postgres -> CompanyRepository
 CompanyRepository -> "CompanyMapper\n (Mapstruct)": convert List<Company>\n to List<CompanyDTO>
-"CompanyMapper\n (Mapstruct)"-> CompanyRepository
-CompanyRepository -> CompanyService
+"CompanyMapper\n (Mapstruct)"-> CompanyService
 CompanyService -> CompanyResource
+CompanyResource ->[
 @enduml

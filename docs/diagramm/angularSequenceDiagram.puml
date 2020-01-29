@@ -4,6 +4,8 @@ footer Page 2 of 3
 
 title Angular
 CompanyRoute -> CompanyComponent: check if user has access rights
-CompanyComponent -> CompanyService: query /api/companies
+CompanyComponent -> CompanyService: getAllCompanies()
+CompanyService ->] : GET /api/companies
+]-> CompanyService  : GET /api/companies
 CompanyService -> CompanyComponent
 @enduml
