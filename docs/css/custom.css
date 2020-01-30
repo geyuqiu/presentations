@@ -38,4 +38,8 @@ ul.small li{
     background-color: gray;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
+
 
