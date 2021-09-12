@@ -1,8 +1,0 @@
-@startuml
-
-footer Page 1 of 3
-
-title Get all companies
-Angular -> "Spring Boot": fetch if user logged in: GET /api/companies
-"Spring Boot" -> Angular: return some companies
-@enduml
