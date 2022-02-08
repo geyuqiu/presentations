@@ -5,3 +5,12 @@
     max-height: calc(60vh);
     max-width: calc(60vw);
 }
+
+.reveal pre code {
+    max-height: none;
+}
+
+.reveal pre {
+    width: 100%;
+    magrin: 0;
+}

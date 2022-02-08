@@ -330,7 +330,107 @@
         </section>
         <section>
             <section>
+                <p>
+                    <a href="https://devskiller.com/history-of-programming-languages">history of programming paradigms</a>
+                </p>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms">comparison of programming paradigms</a>
+                </p>
+            </section>
+            <section>
                 <h2>clean coder</h2>
+            </section>
+            <section>
+                <img src="assets/wtfPerMinute.png">
+            </section>
+            <section>
+                <p>Clean code always looks like it was written by someone who cares.</p>
+            </section>
+            <section>
+                <p>Clean code is a discipline.</p>
+            </section>
+            <section>
+                <h2>Clean code </h2>
+                <p>is a culture, </p>
+                <p>is a belief, </p>
+                <p>is like taking an oath to be like a POTUS, a lawyer, a supreme court judge.</p>
+            </section>
+            <section>
+                <p>interessante Beispiele</p>
+            </section>
+            <section>
+                <img src="assets/wrongKindOfKiss.png">
+            </section>
+            <section>
+                <img src="assets/wrongKindOfApiDoc.png">
+            </section>
+            <section>
+                <pre><code data-line-numbers="2,6,10,15">/**
+ * Current device settings
+ */
+public settings: IDeviceSettings;
+/**
+ * If it is an iOS device
+ */
+public isIos: boolean;
+/**
+ * When component gets destroyed
+ */
+public ngOnDestroy(): void {
+ this.resetMap();
+}
+// TODO -> don't do
+                </code></pre>
+            </section>
+            <section>
+                <img src="assets/whenTooMuchTodosAreGettingOutOfHands.png">
+            </section>
+            <section>
+                <pre><code data-line-numbers="2">export interface Location {
+  adress: string;
+  coords: Coords;
+}
+                </code></pre>
+            </section>
+            <section>
+                <pre><code>return quotationMap.values()
+                    .stream()
+                    .collect(Collectors.toList());</code></pre>
+            </section>
+            <section>
+                <pre><code style="width: 143%; margin-left: -100px">private RegionwiseRatingMetric calculateRatingMetric(List&lt;BusinessImpactMetrics&gt; list) {
+  var regionwiseRatingMetric = new RegionwiseRatingMetric();
+  regionwiseRatingMetric.setRatingsByRegions(list.stream()
+     .map(BusinessImpactMetrics::getRegionwiseRatingMetric)
+     .map(RegionwiseRatingMetric::getRatingsByRegions).flatMap(List::stream)
+     .collect(Collectors
+       .collectingAndThen(Collectors
+         .groupingBy(RegionwiseRatingMetric.RatingsByRegion::getRegion), map -> map
+         .entrySet().stream()
+         .collect(Collectors
+           .toMap(Map.Entry::getKey,
+             entry -> entry
+               .getValue().stream()
+               .map(RegionwiseRatingMetric.RatingsByRegion::getRatingDetails)
+               .flatMap(List::stream)
+               .collect(Collectors
+                 .groupingBy(RegionwiseRatingMetric.RatingDetail::getRating,
+                   Collectors
+                     .summingInt(RegionwiseRatingMetric.RatingDetail::getCount)))
+           ))
+         .entrySet().stream().map(this::createRatingByRegion)
+         .collect(Collectors.toList()))));
+  return regionwiseRatingMetric;
+}</code></pre>
+            </section>
+            <section>
+                <img src="assets/cannotReadMyOwnCode.png">
+            </section>
+            <section>
+                <img src="assets/gitComments.png">
+            </section>
+            <section>
+                <img src="assets/yagni.png">
             </section>
         </section>
         <section>
