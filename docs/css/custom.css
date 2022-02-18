@@ -14,3 +14,18 @@
     width: 100%;
     magrin: 0;
 }
+
+.slides .introduction .header
+.slides .git .header
+.slides .agile-development-principles .header
+.slides .miscellaneous .header
+.slides .qa .header
+.slides .architecture .header
+.slides .best-practices .header
+.slides .cicd .header
+.slides .soft-skills .header
+{
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
