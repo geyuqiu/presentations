@@ -15,17 +15,21 @@
     magrin: 0;
 }
 
-.slides .introduction .header
-.slides .git .header
-.slides .agile-development-principles .header
-.slides .miscellaneous .header
-.slides .qa .header
-.slides .architecture .header
-.slides .best-practices .header
-.slides .cicd .header
-.slides .soft-skills .header
+.reveal .slides .introduction .header
+.reveal .slides .git .header
+.reveal .slides .agile-development-principles .header
+.reveal .slides .miscellaneous .header
+.reveal .slides .qa .header
+.reveal .slides .architecture .header
+.reveal .slides .best-practices .header
+.reveal .slides .cicd .header
+.reveal .slides .soft-skills .header
 {
     position: absolute;
     top: -3px;
     left: 0;
+}
+
+.reveal .slides .highlight-green {
+    background: green;
 }
