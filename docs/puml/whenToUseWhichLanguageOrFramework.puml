@@ -1,0 +1,23 @@
+@startuml
+
+package "Frontend" {
+  HTTP - [TypeScript: Angular, React, Vue]
+  [TypeScript: Angular, React, Vue]
+}
+
+cloud {
+  [Backend: Java (Spring Boot), Ruby (on rails), C# (asp.net), Python (Flask)]
+}
+
+
+database "Sql, NoSql, GraphDB" {
+  folder "entity" {
+    [ORM (hibernate)]
+  }
+}
+
+
+[TypeScript: Angular, React, Vue] --> [Backend: Java (Spring Boot), Ruby (on rails), C# (asp.net), Python (Flask)]
+[Backend: Java (Spring Boot), Ruby (on rails), C# (asp.net), Python (Flask)] --> [ORM (hibernate)]
+
+@enduml
